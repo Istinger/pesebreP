@@ -86,11 +86,8 @@ El sistema requiere las siguientes tablas principales:
 - Validación de estado de usuario (Activo/Bloqueado)
 - Registro de actividades en bitácora
 
-## 📝 Licencia
-
-[Especificar licencia]
-
 ## 👤 Autor
+Patricio Jossue Proano Guerrero
 
 **Istinger**
 - GitHub: [@Istinger](https://github.com/Istinger)
