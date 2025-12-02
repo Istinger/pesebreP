@@ -87,11 +87,7 @@ El sistema requiere las siguientes tablas principales:
 - Registro de actividades en bitácora
 
 ## 👤 Autor
-Patricio Jossue Proano Guerrero
 
 **Istinger**
 - GitHub: [@Istinger](https://github.com/Istinger)
 
----
-
-⭐ Si te gusta este proyecto, dale una estrella en GitHub!
