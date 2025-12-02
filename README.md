@@ -19,7 +19,7 @@ PesebreP es una aplicación web Java que permite administrar y compartir conteni
 ## 🛠️ Tecnologías
 
 - **Backend**: Java
-- **Base de Datos**: MySQL/MariaDB
+- **Base de Datos**: PostgresSQL
 - **Arquitectura**: MVC con JDBC
 - **Gestión de Dependencias**: Maven/Gradle (según configuración)
 
