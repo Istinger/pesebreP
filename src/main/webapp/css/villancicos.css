@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* ===========================================================
+   🎵 ESTILO DE VILLANCICOS
+=========================================================== */
+
+/* Card del villancico */
+.villan-card {
+    background: rgba(113, 88, 0, 0.85); /* Paleta 715800 */
+    color: white;
+    border-radius: 15px;
+    padding: 18px;
+    backdrop-filter: blur(4px);
+    border: 2px solid #FFD7B0;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.villan-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 215, 176, 0.7);
+}
+
+/* Imagen */
+.villan-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 220px;
+    border: 3px solid #FFD7B0;
+}
+
+/* Título */
+.villan-title {
+    font-size: 1.4rem;
+    color: #FFD7B0;
+    font-weight: bold;
+}
+
+/* Letra */
+.villan-letra {
+    background: rgba(255,255,255,0.17);
+    padding: 12px;
+    border-radius: 10px;
+    max-height: 240px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+/* Scroll personalizado */
+.villan-letra::-webkit-scrollbar {
+    width: 7px;
+}
+
+.villan-letra::-webkit-scrollbar-thumb {
+    background: #FFD7B0;
+    border-radius: 6px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .villan-img {
+        height: 180px;
+    }
+    .villan-title {
+        font-size: 1.2rem;
+    }
+}

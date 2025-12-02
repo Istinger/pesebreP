@@ -1,0 +1,106 @@
+/* ===== FONDO NAVIDEÑO ===== */
+body {
+    background-image: url('../imgs/fondoreegistro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Tarjeta navideña */
+.registro-card {
+    max-width: 750px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 215, 176, 0.25);
+    border: 2px solid rgba(255, 215, 176, 0.8);
+    border-radius: 15px;
+}
+
+/* Encabezado dorado */
+.card-header {
+    background: linear-gradient(45deg, #b88a44, #f7d774);
+    color: #1b263b !important;
+    border-radius: 14px !important;
+}
+
+.form-label {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+/* Inputs estilo cálido */
+.form-control,
+.form-select {
+    background: rgba(255,255,255,0.75);
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+}
+
+/* Color picker grande */
+.color-big {
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Botón dorado */
+.btn-gold {
+    background-color: #f7d774;
+    color: #1b263b;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-gold:hover {
+    background-color: #ffe89a;
+}
+
+/* Radios */
+.residencia-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-weight: 600;
+    color: white;
+}
+
+/* Responsive form */
+@media (max-width: 768px) {
+    .registro-card {
+        padding: 20px !important;
+        margin-top: 20px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .residencia-group {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .color-big {
+        height: 48px;
+    }
+}
+/* ❄ COPOS DE NIEVE VISIBLES */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1.4rem;
+    pointer-events: none;
+    user-select: none;
+    z-index: 9999;
+    animation: caerNieve linear infinite;
+}
+
+@keyframes caerNieve {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0.8; }
+}

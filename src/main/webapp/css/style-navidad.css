@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/* ===========================================================
+   🎄 PALETA NAVIDEÑA GLOBAL
+=========================================================== */
+:root {
+    --naranja: #FF864A;
+    --naranja-op: rgba(255, 134, 74, 0.70);
+    --naranja-strong: rgba(255, 134, 74, 0.90);
+
+    --dorado: #d4a017;
+    --beige: #FFD7B0;
+    --beige-op: rgba(255, 215, 176, 0.85);
+
+    --vino: #7A1F1F;
+    --vino-dark: #5C0F0F;
+
+    --white: #ffffff;
+    --negro: #0F0D06;
+}
+
+/* ===========================================================
+   🎄 FONDO NAVIDEÑO GLOBAL
+=========================================================== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url("../imgs/pesebrefondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Overlay dinámico tipo index.jsp */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: blur(4px);
+    transition: background 0.5s ease;
+}
+
+body.morning::before { background: rgba(255, 215, 176, 0.40); }
+body.afternoon::before { background: rgba(255, 134, 74, 0.40); }
+body.night::before { background: rgba(20, 16, 10, 0.55); }
+
+/* ===========================================================
+   ♿ ACCESIBILIDAD GLOBAL
+=========================================================== */
+.accessibility-bar {
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+}
+
+.access-btn {
+    background: var(--naranja);
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.access-btn:hover {
+    background: var(--dorado);
+}
+
+.high-contrast {
+    filter: invert(100%) contrast(160%);
+}
+
+/* ===========================================================
+   ⭐ NAVBAR UNIVERSAL RESPONSIVE
+=========================================================== */
+.navbar-custom {
+    width: 100%;
+    background: var(--naranja-strong);
+    border-bottom: 3px solid var(--dorado);
+    backdrop-filter: blur(6px);
+    padding: 12px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo a {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Lista */
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li a {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.navbar-list li a:hover {
+    color: #FFD700;
+    transform: translateY(-2px);
+}
+
+/* Botón hamburguesa */
+.navbar-toggle {
+    display: none;
+    color: var(--white);
+    background: none;
+    border: none;
+    font-size: 1.7rem;
+}
+
+/* ===========================================================
+   📱 NAVBAR RESPONSIVE
+=========================================================== */
+@media (max-width: 900px) {
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 70px;
+        right: 0;
+
+        width: 100%;
+        padding: 25px 0;
+
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+        background: rgba(255, 134, 74, 0.95);
+        border-bottom: 3px solid var(--dorado);
+
+        display: none;
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .navbar-list li a {
+        font-size: 1.3rem;
+    }
+}
+
+/* ===========================================================
+   🎀 HEADERS NAVIDEÑOS POR PÁGINA
+=========================================================== */
+.header-novena {
+    background: linear-gradient(#7A1F1F, #B30000);
+    padding: 45px 0;
+    text-align: center;
+    color: white;
+}
+
+.header-personajes {
+    background: linear-gradient(#715800, #8A6A00);
+    padding: 45px 0;
+    text-align: center;
+}
+
+.header-villancicos {
+    background: linear-gradient(#5C0F0F, #7A1F1F);
+    padding: 45px 0;
+    text-align: center;
+}
+
+.header-juego {
+    background: linear-gradient(#004400, #006600);
+    padding: 45px 0;
+    text-align: center;
+}
+
+/* ===========================================================
+   ⭐ TARJETAS UNIVERSALES
+=========================================================== */
+.card-navidad {
+    background: var(--beige-op);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* ===========================================================
+   ⭐ FOOTER
+=========================================================== */
+.footer-navidad {
+    background: var(--naranja-op);
+    border-top: 4px solid var(--dorado);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer-navidad i { color: var(--dorado); }

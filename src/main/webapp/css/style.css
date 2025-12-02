@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Fondo suave general */
+body {
+    background: #faf7f2;
+}
+
+/* Cards estilo portal */
+.menu-card {
+    transition: transform .3s ease;
+}
+.menu-card:hover {
+    transform: scale(1.06);
+}
+
+/* Ajuste de imágenes del carousel */
+.bd-placeholder-img {
+    object-fit: cover;
+    height: 450px;
+}
+
+/* Títulos */
+h2 {
+    color: #7a1f1f;
+}
+
+/* Footer */
+footer {
+    border-top: 4px solid #a00;
+}
+/* Asegurar que los enlaces del menú se vean bien en móvil */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+/* En móvil, centrar y espaciar */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        gap: 10px;
+    }
+}
+

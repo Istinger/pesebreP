@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+    background: #0e0e0e url('../img/bg_navidad_dark.png') repeat;
+}
+
+.header-bg {
+    background: linear-gradient(180deg, #6a0000, #a30000);
+    border-bottom: 3px solid #d4af37;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    border-radius: 12px;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
